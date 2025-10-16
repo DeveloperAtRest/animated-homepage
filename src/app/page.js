@@ -33,7 +33,7 @@ export default function Home() {
   ];
 
   const testimonials = [
-    { name: "Rajesh", text: "Best poker chips I've ever used!", image: "/images/testimonial1.jpg" },
+    { name: "Rajesh", text: "Best poker chips I&apos;ve ever used!", image: "/images/testimonial1.jpg" },
     { name: "Anjali", text: "Professional cards with amazing quality.", image: "/images/testimonial2.jpg" },
     { name: "Sonia", text: "Love the custom poker tables!", image: "/images/testimonial3.jpg" },
   ];
@@ -64,7 +64,6 @@ export default function Home() {
         </nav>
       </header>
 
-      {/* Hero Section */}
       <motion.section
         id="hero"
         className="hero"
@@ -139,7 +138,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Testimonials Section */}
       <section id="testimonials" className="testimonials">
         <motion.h2
           variants={animationVariants}
@@ -164,14 +162,13 @@ export default function Home() {
               transition={{ duration: 0.6, delay: i * 0.2 }}
             >
               <img src={t.image} alt={t.name} />
-              <p>"{t.text}"</p>
+              <p>&quot;{t.text}&quot;</p>
               <h4>- {t.name}</h4>
             </motion.div>
           ))}
         </div>
       </section>
 
-      {/* CTA Section */}
       <section id="cta" className="cta">
         <motion.h2
           variants={animationVariants}
